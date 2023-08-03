@@ -116,7 +116,7 @@
                     background-color:cyan;
                     color: yellowgreen;
                     border-radius: 5px;
-                    transform: rotateY (360deg);
+                    transform: rotate(360deg);
                     transform: scale(50%);
                 }
 
@@ -193,6 +193,107 @@
                 <!-- button -->
 
                 <button class="mybutton">Home</button>
+                <br><br>
+
+                <!--forms-->
+                <form>    <!-- readonly mein read krega  -->
+                    <label for="name">  Name</label>
+                    <input readonly type="text" id="name" placeholder="Enter Your FullName">
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <br>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+
+
+
+                    <input type="submit" value="Login">
+                </form>
+                <form> <!--required mei complusory kre dega-->
+                    <label for="name">  Name</label>
+                    <input required type="text" id="name" placeholder="Enter Your FullName">
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <br>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+
+
+
+                    <input type="submit" value="Login">
+                </form>
+                <form> <!--disabled mein disable kr dega-->
+                    <fieldset>
+                        <legend>Persoanl Detalis</legend>
+                    <label for="name">  Name</label>
+                    <input disabled type="text" id="name" placeholder="Enter Your FullName">
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <br></fieldset>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+
+                    <input type="color">
+                    <br>
+                    <input type="date">
+                    <br><br>
+                    <input type="datetime-local">
+                    <br><br>
+                    <input type="time">
+                    <br><br>
+                    <input type="month">
+                    <br><br>
+                    <input type="file" multiple>
+                    <br><br>
+                    <input type="file" multiple accept="video/">
+                    <br><br>
+                    <input type="file" multiple accept="Image/">
+                    <br><br>
+                    <input type="hidden">
+                    <br> <br><!-- user se hidden hoga -->
+                    <input height="20px" width="20px" type="image" src="/Image/Meta.png">
+                    <br><br><!-- image ko submit ki tarah kaam krta hai -->
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"><!--name is also working like id-->
+                    <label for="female">Female</label>
+                    <br> <br>
+                    <input type="checkbox" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="female" name="gender"><!--name is also working like id-->
+                    <label for="female">Female</label>
+                    <br> <br>
+                    <select name="" id=""> <!--iss mein required and all use kr skte hai -->
+                        <optgroup label="Transport">
+                        <option value="1">Car</option>
+                        <option value="2"> Bus</option>
+                        <option value="3">plane</option>
+                        </optgroup>
+                        <optgroup label="eTransport">
+                        <option value="1">eCar</option>
+                        <option value="2">eBus</option>
+                        <option value="3">eplane</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+
+                    <textarea name="" id="" cols="30" rows="10">
+
+                    </textarea>
+                    <br><br>
+                    <input type="number">
+                    <input type="reset">
+                    <input type="date" min="2023-07-31" max="2023-08-31">
+                 
+
+
+
+                    <input type="submit" value="Login">
+                </form>
+
 
 
     </body>
